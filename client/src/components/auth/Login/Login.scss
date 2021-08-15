@@ -1,0 +1,168 @@
+.bg {
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.login {
+  width: 390px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 77px 55px 33px 55px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  &-form-title {
+    display: block;
+    font-family: "Lato";
+    font-size: 30px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
+
+  &-button {
+    position: relative;
+    margin: 0;
+    padding: 5px 12px;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1786e0;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+
+    [type="button"]:not(:disabled),
+    [type="reset"]:not(:disabled),
+    [type="submit"]:not(:disabled),
+    button:not(:disabled) {
+      cursor: pointer;
+    }
+    [type="button"],
+    [type="reset"],
+    [type="submit"],
+    button {
+      -webkit-appearance: button;
+    }
+    // button, select {
+    //     text-transform: none;
+    // }
+    // button, input {
+    //     overflow: visible;
+    // }
+    // button, input, optgroup, select, textarea {
+    //     margin: 0;
+    //     font-family: inherit;
+    //     font-size: inherit;
+    //     line-height: inherit;
+    // }
+    // button {
+    //     border-radius: 0;
+    // }
+    // [type=button], [type=reset], [type=submit], button {
+    //     -webkit-appearance: button;
+    // }
+    // button, select {
+    //     text-transform: none;
+    // }
+    // button, input {
+    //     overflow: visible;
+    // }
+    // button, input, optgroup, select, textarea {
+    //     font-family: inherit;
+    //     font-size: 100%;
+    //     line-height: 1.15;
+    //     margin: 0;
+    // }
+    // *, ::after, ::before {
+    //     box-sizing: border-box;
+    // }
+    // button {
+    //     appearance: auto;
+    //     -webkit-writing-mode: horizontal-tb !important;
+    //     text-rendering: auto;
+    //     color: -internal-light-dark(black, white);
+    //     letter-spacing: normal;
+    //     word-spacing: normal;
+    //     text-transform: none;
+    //     text-indent: 0px;
+    //     text-shadow: none;
+    //     display: inline-block;
+    //     text-align: center;
+    //     align-items: flex-start;
+    //     cursor: default;
+    //     background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    //     box-sizing: border-box;
+    //     margin: 0em;
+    //     font: 400 13.3333px Arial;
+    //     padding: 1px 6px;
+    //     border-width: 2px;
+    //     border-style: outset;
+    //     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    //     border-image: initial;
+    // }
+    // style attribute {
+    //     font-family: 'Open Sans', sans-serif;
+    // }
+    // body {
+    //     margin: 0;
+    //     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    //     font-size: 1rem;
+    //     font-weight: 400;
+    //     line-height: 1.5;
+    //     color: #212529;
+    //     text-align: left;
+    //     background-color: #fff;
+    // }
+
+    // *, ::after, ::before {
+    //     box-sizing: border-box;
+    // }
+    &:after {
+      position: absolute;
+      right: 0;
+      left: auto;
+      transition: 0.3s;
+      content: "";
+      width: 0;
+      bottom: 0;
+      height: 3px;
+      background: #1786e0;
+    }
+  }
+  &-app-version {
+    font-size: 12px;
+    color: #ccc;
+    margin: 10px;
+    text-align: right;
+  }
+}
